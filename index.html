@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>What's the weather</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="bg" class="container">
+      <h1 id="welcome-title">Jordan's Weather App</h1>
+      <h1 id="welcome-title-min">J.W.A</h1>
+    </div>
+    <br>
+  <div class="container">
+    <ul>
+      <li class="city-save">Search</li>
+      <li class="city-save" id ="current-location">Current Location</li>
+      <li class="city-save" id ="rand-location">Random</li>
+    </ul>
+    <div id="search-page" class="page search-page">
+      <h2>Search... <input type="search" id="search" placeholder="City..."></h2>
+      <h1 id="city"></h1>
+      <h1 id="temp-container"><span id="temperture">...</span>&#8451</h1>
+      <h4 id="des">Mostly rainy</h4>
+    </div>
+    <div class="page current-page">
+      <h1 id="city2"></h1>
+      <h1 id="temp-container"><span id="temperture2">...</span>&#8451</h1>
+      <h4 id="des2">Mostly rainy</h4>
+    </div>
+    <div class="page random-page">
+      <h1 id="city3"></h1>
+      <h1 id="temp-container"><span id="temperture3">...</span>&#8451</h1>
+      <h4 id="des3">Mostly rainy</h4>
+    </div>
+
+  </div>
+  <script src="app.js"></script>
+  <script src="cities.js"></script>
+</body>
+</html>

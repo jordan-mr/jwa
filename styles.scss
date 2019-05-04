@@ -1,0 +1,152 @@
+$primeColor: #ccc;
+$noDisplay: none;
+
+$bgColor1: #ffebee;
+$bgColor2: #e8eaf6;
+$bgColor3: #e0f2f1;
+$bgColor4: #f9fbe7;
+$bgColor5: #f3e5f5;
+$bgColor6: #4286f4;
+$bgColor7: #0e326d;
+*{
+  margin:0;
+  padding:0;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  color:#fff;
+ }
+
+body{
+  //font-family: Arial, Helvetica, sans-serif;
+  background-color: #c0c5ce;
+}
+#bg{
+  margin:0;
+  width: 100vw;
+  height: 150px;
+ background-color: $bgColor6;
+ box-shadow: 0px 1px 103px 15px rgba(255, 255, 255, 0.457);
+  h1{
+    color:white;
+    font-size:100px;  
+  } 
+}
+#welcome-title-min{
+  display: none;
+  text-align: center;
+  margin-bottom: 100px;
+}
+#welcome-title{
+  color: $primeColor;
+  text-align: center;
+  margin-bottom: 100px;
+}
+ul{
+  margin-top:30px;
+  margin-left:30px;
+  width:20%;
+  height:60vh;
+  float: left;
+  list-style: none;
+  border-right: solid #ccc 0.4px;
+
+  li{
+    margin:15px 0;
+    font-size:30px;
+
+   &:hover{
+     color:gray;
+     cursor: pointer;
+   } 
+  }
+}
+.current-page, .random-page{
+  display: none;
+}
+.page{
+  position: absolute;
+  top:200px;
+  left:25%;
+  width:60%;
+  margin: auto;
+  //border: #ccc solid 1px;
+  text-align: center;
+  h2{
+    font-size:50px;
+  }
+  input{
+    font-size: 50px;
+  }
+  #city, #temp-container{
+    display: inline-flex;
+    margin-top:40px;
+    margin-left: 40px;
+    text-align: left;
+    font-size:65px;
+    font-weight: 100;
+  }
+  #des{
+    margin-top:20px;
+    font-size:30px;
+    font-weight: 100;
+  }
+}
+@media only screen and (max-width: 1100px){
+  #welcome-title{
+    font-size:70px !important;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  h1{
+    color:white !important;
+    font-size:100px;
+    
+    #welcome-title-min{
+      display: initial !important;
+    }
+  } 
+  #welcome-title{
+    display: none !important;
+  }
+  #welcome-title-min{
+    display: inherit !important;
+  }
+  .container{
+    display: block !important;
+  }
+  .page{
+    position: inherit;
+    text-align: center;
+    
+    h1, h2, h4, input, span{
+      font-size: 25px;
+    }
+    #search{
+      width:100%;
+      display: block;
+      text-align: center;
+    }
+
+    #city, #temp-container{
+      margin-top:10px;
+      margin-left: 0px;
+      font-size: 15px;
+    }
+    #city{
+      font-size: 25px;
+    }
+    
+  }
+  ul{
+    height:30vh;
+    margin: auto;
+    clear: both;
+    width: 100%;
+    text-align: center;
+    color:#eee;
+    font-weight: 700;
+  }
+}
+
